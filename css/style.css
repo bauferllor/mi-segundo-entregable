@@ -1,0 +1,205 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2b2b2b;
+    background-color: #2b2b2b;
+}
+
+/*Index.html*/
+
+/*Navbar*/
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.bg-navbar{
+    background-color: #e2c09e;
+}
+
+.carousel img{
+    width: 50%;
+    height: 50%;
+    display: grid;
+    justify-content: center;
+}
+    
+
+/*Grids*/
+
+.grilla {
+    display: grid;
+    text-align: center;
+    margin: 3 auto;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.primer-producto{
+    justify-self: center;
+    align-self: unset;
+}
+
+.segundo-producto{
+    justify-self: center;
+    align-self: unset;
+}
+
+/*main*/
+main{
+    text-align: center;
+}
+
+/* tipografia */
+h1 {
+    font-size: 5rem;
+    color: #faf0e6 ;
+}
+
+h2 {
+    font-size: 4rem;
+    color: #fdf5e6;
+}
+
+
+h1,h2 {
+    text-align: center;
+}
+
+
+/* footer */
+.pie-pagina .derechos {
+    text-align: center;
+    color: #ccccccc0;
+}
+
+
+/* BOTONES */
+.boton {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+
+
+
+
+/*productos.html*/
+
+/* header */
+.encabezado2 h1{
+    font-weight: lighter;
+}
+body{
+    background-color: #2b2b2b;
+}
+
+/*cuerpo*/
+
+.productos{
+    display: grid;
+    grid-template-rows: 800px 800px ;
+    grid-template-columns: 1fr 1fr ;
+    /*border: 3px solid #fdfdf2;*/
+
+}
+
+.beige{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.mostaza{
+    display: grid;
+    place-content: center;
+}
+
+.blanca{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.negra{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+/* footer */
+.pie-pagina2 .derechos2 {
+    text-align: center;
+    color: #ccccccc0;
+}
+
+
+/*pagar.html*/
+
+
+/*nosotros.html*/
+
+body{
+    background-color: #2b2b2b;
+}
+
+
+
+.encabezado4 p{
+    display: flex;
+    margin: 20px 500px;
+    color: #fff5ee;
+    text-align: justify;
+}
+
+/*footer*/
+
+.pie-pagina4{
+    text-align: center;
+    color: #ccccccc0;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+
+
+/*contacto.html*/
+
+body{
+    background-color: #2b2b2b;
+}
+
+.redes{
+    display: grid;
+    color: #fff5ee;
+    text-align: center;
+    justify-content: center;
+    grid-template-rows: 200px 200px 200px 200px;
+    font-size: 2rem;
+}
+
+
+/* footer */
+.pie-pagina5 .derechos5{
+    text-align: center;
+    color: #ccccccc0;
+}
