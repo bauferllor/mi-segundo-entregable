@@ -39,7 +39,7 @@ body {
     display: grid;
     text-align: center;
     margin: 3 auto;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 300px 300px 100px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -97,6 +97,30 @@ h1,h2 {
     border: none;
 }
 
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .grilla {
+        display: grid;
+        text-align: center;
+        grid-template-rows: 800px 800px 100px;
+        grid-template-columns: 1fr;
+    }
+    .primer-producto{
+        justify-self: center;
+        align-self: unset;
+    }
+    
+    .segundo-producto{
+        justify-self: center;
+        align-self: unset;
+    }
+
+}
 
 
 
