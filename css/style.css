@@ -96,10 +96,10 @@ h1,h2 {
     text-align: center;
     border: none;
 }
-
-@media only screen and (max-width: 600px){
+ /*mobile*/
+@media only screen and (max-width: 700px){
     h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     h2{
         font-size: 2rem;
@@ -107,17 +107,22 @@ h1,h2 {
     .grilla {
         display: grid;
         text-align: center;
-        grid-template-rows: 800px 800px 100px;
+        grid-template-rows: 500px 500px 100px;
         grid-template-columns: 1fr;
     }
     .primer-producto{
         justify-self: center;
-        align-self: unset;
+        align-self: center;
+    }
+    .boton{
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
     
     .segundo-producto{
         justify-self: center;
-        align-self: unset;
+        align-self: center;
     }
 
 }
@@ -127,23 +132,40 @@ h1,h2 {
 
 /*productos.html*/
 
+
+body{
+    background-color: #2b2b2b;
+}
+
+@media only screen and (min-width: 701px){
 /* header */
 .encabezado2 h1{
     font-weight: lighter;
-}
-body{
-    background-color: #2b2b2b;
 }
 
 /*cuerpo*/
 
 .productos{
     display: grid;
-    grid-template-rows: 800px 800px ;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 600px 600px 150px 600px ;
+    grid-template-columns: 1fr 1fr;
     /*border: 3px solid #fdfdf2;*/
-
 }
+.superiores{
+    display: flex;
+    justify-content: left;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.productos h3{
+    font-size: 4rem;
+    color: #fdf5e6; 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .beige{
     display: grid;
@@ -154,7 +176,8 @@ body{
 
 .mostaza{
     display: grid;
-    place-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .blanca{
@@ -169,15 +192,102 @@ body{
     align-self: center;
 }
 
+.azul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+}
+
+.gris{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+}
+}
+
+
 /* footer */
 .pie-pagina2 .derechos2 {
     text-align: center;
     color: #ccccccc0;
 }
-
+ /*mobile*/
+@media only screen and (max-width: 700px){
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 400px 400px 400px 100px 400px;
+        row-gap: 8rem;
+    }
+    .productos h3{
+        font-size: 2rem;
+        color: #fdf5e6; 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .azul{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .gris{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .beige{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .mostaza{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .blanca{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .negra{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 /*pagar.html*/
 
+.pagos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px;
+    font-size: 2rem;
+}
+.tarjeta{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.efectivo{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.transferencia{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+/* footer */
+.pie-pagina3 .derechos3 {
+    text-align: center;
+    color: #ccccccc0;
+}
 
 /*nosotros.html*/
 
@@ -219,6 +329,7 @@ body{
     justify-content: center;
     grid-template-rows: 200px 200px 200px 200px;
     font-size: 2rem;
+    margin: 50px;
 }
 
 
