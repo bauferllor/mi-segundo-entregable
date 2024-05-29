@@ -1,0 +1,312 @@
+
+@import "../scss/utilidades/resets";
+@import "../scss/utilidades/variables";
+
+
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    .bg-navbar{
+        background-color: #e2c09e;
+    }
+
+
+    .carousel img{
+        width: 50%;
+        height: 50%;
+        display: grid;
+        justify-content: center;
+    }
+
+
+
+    .grilla {
+        display: grid;
+        text-align: center;
+        margin: 3 auto;
+        grid-template-rows: 300px 300px 100px;
+        grid-template-columns: 1fr 1fr;
+
+        .primer-producto{
+            justify-self: center;
+            align-self: unset;
+        }
+        
+        .segundo-producto{
+            justify-self: center;
+            align-self: unset;
+        }
+    }
+
+/*tablet*/
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .grilla {
+        display: grid;
+        text-align: center;
+        grid-template-rows: 600px 600px 300px;
+        grid-template-columns: 1fr;
+    }
+    .primer-producto{
+        justify-self: center;
+        align-self: center;
+    }
+    .boton{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .segundo-producto{
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+ /*mobile*/
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .grilla {
+        display: grid;
+        text-align: center;
+        grid-template-rows: 500px 500px 100px;
+        grid-template-columns: 1fr;
+    }
+    .primer-producto{
+        justify-self: center;
+        align-self: center;
+    }
+    .boton{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .segundo-producto{
+        justify-self: center;
+        align-self: center;
+    }
+
+}
+
+//productos.html
+
+
+    .encabezado2 h1{
+        font-weight: lighter;
+    }
+
+
+    .productos{
+        display: grid;
+        grid-template-rows: 600px 600px 150px 600px ;
+        grid-template-columns: 1fr 1fr;
+        /*border: 3px solid #fdfdf2;*/
+        .productos div p{
+            color: $color-secundary;
+            display: grid;
+            justify-content: center;
+        }
+        
+        .productos h3{
+            font-size: 4rem;
+            color: $color-secundary; 
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .superiores{
+            display: flex;
+            justify-content: left;
+            margin-left: 250px;
+            margin-top: 50px;
+        }
+
+        .beige{
+            display: grid;
+            justify-self: center;
+            align-self: center;
+        
+        }
+        
+        .mostaza{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .blanca{
+            display: grid;
+            justify-self: center;
+            align-self: center;
+        }
+        
+        .negra{
+            display: grid;
+            justify-self: center;
+            align-self: center;
+        }
+        
+        .azul{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1/2;
+        }
+        
+        .gris{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-column: 2/3;
+        }
+    }
+
+@media only screen and (max-width: 700px){
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px 500px 100px 500px;
+        row-gap: 8rem;
+    }
+    .productos h3{
+        font-size: 2rem;
+        color: $color-secundary; 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .azul{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .gris{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .beige{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .mostaza{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .blanca{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .negra{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+//pagar.html
+
+
+    .pagos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px 200px;
+        font-size: 2rem;
+
+        .tarjeta{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .efectivo{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .transferencia{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+//nosotros.html
+
+
+    .encabezado4 p{
+        display: flex;
+        margin: 20px 300px;
+        color: $color-secundary;
+        text-align: justify;
+    }
+    .encabezado4 img{
+        height: 60%;
+        width: 60%;
+    }
+
+@media only screen and (max-width: 700px){
+    .encabezado4 p {
+        display: flex;
+        margin:20px ;
+        text-align: justify;
+    }
+    .encabezado4 img{
+        height: 80%;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+    .encabezado4 p {
+        display: flex;
+        margin:20px ;
+        text-align: justify;
+    }
+    .encabezado4 img{
+        height: 80%;
+        width: 80%;
+    }
+}
+
+//contacto.html
+
+
+    .redes{
+        display: grid;
+        color: $color-secundary;
+        text-align: center;
+        justify-content: center;
+        grid-template-rows: 200px 200px 200px 200px;
+        font-size: 2rem;
+        margin: 50px;
+    }
+
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+    h1{
+        font-size: 2rem;
+    }
+}
