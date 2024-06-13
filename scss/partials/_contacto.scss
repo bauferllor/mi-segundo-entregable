@@ -1,0 +1,26 @@
+/*contacto.html*/
+@import "../utilidades/resets";
+@import "../utilidades/variables";
+
+.redes{
+    display: grid;
+    color: $color-secundary;
+    text-align: center;
+    justify-content: center;
+    grid-template-rows: 200px 200px 200px 200px;
+    font-size: 2rem;
+    margin: 50px;
+}
+
+@media only screen and (max-width: 700px){
+    h1{
+      font-size: 2rem;
+      color: $color-secundary;
+    }
+}
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+    h1{
+      font-size: 2rem;
+      color: $color-secundary;
+    }
+}

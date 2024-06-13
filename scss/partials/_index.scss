@@ -1,0 +1,121 @@
+/*index*/
+@import "../utilidades/resets";
+@import "../utilidades/variables";
+
+ h1{
+    color: $color-secundary;
+    text-align: center;
+ }
+ h2{
+    color: $color-secundary;
+    text-align: center;
+ }
+ h3{
+    color: $color-secundary;
+    text-align: center;
+ }
+ a{
+    color: $color-secundary;
+ }
+ p{
+    color: $color-secundary;
+ }
+ img{
+    color: $color-secundary;
+ }
+.container-fluid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+.bg-navbar{
+    background-color: #e2c09e;
+}
+
+.grilla {
+    display: grid;
+    text-align: center;
+    margin: 3 auto;
+    grid-template-rows: 300px 300px 100px;
+    grid-template-columns: 1fr 1fr;
+
+    .primer-producto{
+        justify-self: center;
+        align-self: unset;
+    }
+    
+    .segundo-producto{
+        justify-self: center;
+        align-self: unset;
+    }
+}
+
+
+
+ /*mobile*/
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 2rem;
+        color: $color-secundary;
+    }
+    h2{
+        font-size: 2rem;
+        color: $color-secundary;
+    }
+    .grilla {
+        display: grid;
+        text-align: center;
+        grid-template-rows: 500px 500px 100px;
+        grid-template-columns: 1fr;
+    }
+    .primer-producto{
+        justify-self: center;
+        align-self: center;
+    }
+    .boton{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .segundo-producto{
+        justify-self: center;
+        align-self: center;
+    }
+
+}
+
+/*tablet*/
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+    h1{
+      font-size: 2rem;
+      color: $color-secundary;
+    }
+    h2{
+      font-size: 2rem;
+      color: $color-secundary;
+    }
+    .grilla {
+      display: grid;
+      text-align: center;
+      grid-template-rows: 600px 600px 300px;
+      grid-template-columns: 1fr;
+    }
+    .primer-producto{
+      justify-self: center;
+      align-self: center;
+    }
+    .boton{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .segundo-producto{
+      justify-self: center;
+      align-self: center;
+    }
+}
+
+//footer

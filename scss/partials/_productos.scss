@@ -1,0 +1,176 @@
+/*productos.html*/
+@import "../utilidades/resets";
+@import "../utilidades/variables";
+
+.encabezado2 h1{
+    font-weight: lighter;
+}
+
+.boton{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media only screen and (min-width: 1024px) {
+    .productos{
+    display: grid;
+    grid-template-rows: 600px 600px 150px 600px ;
+    grid-template-columns: 1fr 1fr;
+    //border: 3px solid #fdfdf2;
+    .productos div p{
+        color: $color-secundary;
+        display: grid;
+        justify-content: center;
+    }
+    
+    .productos h3{
+        font-size: 4rem;
+        color: $color-secundary; 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .superiores{
+        display: flex;
+        justify-content: left;
+        color: $color-secundary;
+        text-align: left;
+    }
+
+    .beige{
+        display: grid;
+        justify-self: center;
+        align-self: center;
+    
+    }
+    
+    .mostaza{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blanca{
+        display: grid;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .negra{
+        display: grid;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .azul{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/2;
+    }
+    
+    .gris{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2/3;
+    }
+   }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 500px 500px 100px 500px;
+        row-gap: 8rem;
+    }
+    .productos h3{
+        font-size: 2rem;
+        color: $color-secundary; 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .azul{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .gris{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .beige{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .mostaza{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .blanca{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .negra{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .productos{
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr ;
+        row-gap: 8rem;
+
+        
+    }
+    .productos h3{
+       font-size: 2rem;
+       color: $color-secundary; 
+       display: grid;
+       justify-content: center;
+       align-items: center;
+    }
+    .azul{
+        display: grid;
+       justify-content: center;
+       align-items: center;
+    }
+    .gris{
+       display: grid;
+       justify-content: center;
+       align-items: center;
+    }
+    .beige{
+       display: grid;
+       justify-content: center;
+       align-items: center;
+    }
+    .mostaza{
+       display: grid;
+       justify-content: center;
+       align-items: center;
+    }
+    .blanca{
+       display: grid;
+       justify-content: center;
+       align-items: center;
+    }
+    .negra{
+       display: grid;
+       justify-content: center;
+       align-items: center;
+    }
+}

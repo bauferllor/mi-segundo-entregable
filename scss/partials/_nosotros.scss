@@ -1,0 +1,38 @@
+/*nosotros.html*/
+@import "../utilidades/resets";
+@import "../utilidades/variables";
+@import "../utilidades/mixins";
+
+.encabezado4 p{
+    display: flex;
+    margin: 20px 300px;
+    color: $color-secundary;
+    text-align: justify;
+}
+.encabezado4 img{
+    @include sizes(60%, 60%);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px){
+    .encabezado4 p {
+      display: flex;
+      margin:20px ;
+      text-align: justify;
+    }
+    .encabezado4 img{
+      @include sizes(80%, 80%)
+    }
+}
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+    .encabezado4 p {
+      display: flex;
+      margin:20px ;
+      text-align: justify;
+    }
+    .encabezado4 img{
+      @include sizes(80%, 80%);
+    }
+}
