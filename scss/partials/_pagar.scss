@@ -1,26 +1,12 @@
 /*pagar.html*/
 @import "../utilidades/resets";
 @import "../utilidades/variables";
+@import "../utilidades/mixins";
 
 .pagos{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px;
-    font-size: 2rem;
-
-    .tarjeta{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-    .efectivo{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-    .transferencia{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
+    justify-content: center;
+}
+.ropa{
+    @include sizes(100px, 121px)
 }
